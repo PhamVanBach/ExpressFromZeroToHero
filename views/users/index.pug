@@ -1,14 +1,13 @@
-h1 User
-
-a(href="/users/create") New
-
-form(action="/users/search", method="GET")
-    input(type="text", name="q")
-    button Search
-
-ul 
-    each user in users  
-        li
-            span= user.name
-            span &nbsp;
-            a(href= '/users/' + user.id) View
+extends ../layout/layoutBootstrap
+block formOfNav
+    form(action="/users/search", method="GET", class="form-inline my-2 my-lg-0")
+        input(class="form-control mr-sm-2", type="search", placeholder="Search User", aria-label="Search", name="q")
+        button(class="btn btn-outline-success my-2 my-sm-0", type="submit") Search
+block content
+    h1 User
+    ul 
+        each user in users  
+            li
+                span= user.name
+                span &nbsp;
+                a(href= '/users/' + user.id) View

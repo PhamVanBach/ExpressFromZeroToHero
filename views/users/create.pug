@@ -1,7 +1,9 @@
-h1 Create Users
+extends ../layout/layoutBootstrap
+block content
+    h1 Create Users
 
-form(action="/users/create", method="POST")
-    label Name
-    input(name="name", type="text")
-
-    button Create
+    form(action="/users/create", method="POST", class="form-inline my-2 my-lg-0")
+        div(class="form-group")     
+            label(for="inputCreateUser") Name
+            input(id="inputCreateUser", name="name", type="text", class="form-control mr-sm-2", placeholder="Name Of User", aria-label="Search")
+            button(class="btn btn-outline-success my-2 my-sm-0", type="submit") Create
