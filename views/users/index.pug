@@ -2,12 +2,20 @@ extends ../layout/layoutBootstrap
 block formOfNav
     form(action="/users/search", method="GET", class="form-inline my-2 my-lg-0")
         input(class="form-control mr-sm-2", type="search", placeholder="Search User", aria-label="Search", name="q")
-        button(class="btn btn-outline-success my-2 my-sm-0", type="submit") Search
+        button(class="btn btn-primary my-2 my-sm-0", type="submit") Search
 block content
-    h1 User
-    ul 
-        each user in users  
-            li
-                span= user.name
-                span &nbsp;
-                a(href= '/users/' + user.id) View
+    h1
+        span.mr-3 User
+        a.btn.btn-primary(href='/users/create') New
+    .d-flex.align-items-center
+        table.table
+            tr
+                th Name
+                th Phone
+                th Action
+            each user in users  
+                tr
+                    td= user.name
+                    td= user.phone
+                    td
+                        a.btn.btn-light(href= '/users/' + user.id) View

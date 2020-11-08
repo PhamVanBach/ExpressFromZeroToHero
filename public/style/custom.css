@@ -1,0 +1,15 @@
+h1{
+    margin: 20px;
+    padding-top: 2rem;
+}
+h1 a{
+    margin-bottom: 0.5em;
+}
+
+.formsCreate{
+    margin-left: 2rem;
+}
+
+.formsCreate input{
+    width: 500px;
+}

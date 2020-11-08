@@ -2,8 +2,17 @@ extends ../layout/layoutBootstrap
 block content
     h1 Create Users
 
-    form(action="/users/create", method="POST", class="form-inline my-2 my-lg-0")
-        div(class="form-group")     
-            label(for="inputCreateUser") Name
-            input(id="inputCreateUser", name="name", type="text", class="form-control mr-sm-2", placeholder="Name Of User", aria-label="Search")
-            button(class="btn btn-outline-success my-2 my-sm-0", type="submit") Create
+    if errors
+        each error in errors
+            .alert.alert-danger= error
+
+    form(action="/users/create", method="POST", class="formsCreate")
+        .form-group   
+            label(for="inputName") Name
+            input#inputName.form-control(name="name", type="text", placeholder="Name Of User", value=values ? values.name : '')
+           
+        .form-group    
+            label(for="inputPhone") Phone
+            input#inputPhone.form-control(name="phone", type="text", placeholder="Phone Of User", value = values ? values.phone : '')
+    
+        button.btn.btn-primary Create

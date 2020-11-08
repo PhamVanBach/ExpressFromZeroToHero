@@ -2,35 +2,18 @@
   "users": [
     {
       "name": "Bach ne",
-      "id": "XGwy7HW1D"
+      "phone": "12344545",
+      "id": "HNABcL1D5"
+    },
+    {
+      "name": "Bach ne",
+      "phone": "12233",
+      "id": "i1V9eeDqN"
     },
     {
       "name": "huyen ne",
-      "id": "y_fBu70Qh"
-    },
-    {
-      "name": "Mit ne",
-      "id": "ZcTOg47GX"
-    },
-    {
-      "name": "Hehe",
-      "id": "0k0TPxD5M"
-    },
-    {
-      "name": "huyen ne",
-      "id": "9kg-XqEbA"
-    },
-    {
-      "name": "ll",
-      "id": "loDBhgryg"
-    },
-    {
-      "name": "hehe",
-      "id": "3Qk_ICiWJ"
-    },
-    {
-      "name": "hehe",
-      "id": "MSyRD_7_J"
+      "phone": "123",
+      "id": "2upw4Mjyi"
     }
   ]
 }
