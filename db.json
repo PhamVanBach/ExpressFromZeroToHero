@@ -3,17 +3,9 @@
     {
       "name": "Bach ne",
       "phone": "12344545",
-      "id": "HNABcL1D5"
-    },
-    {
-      "name": "Bach ne",
-      "phone": "12233",
-      "id": "i1V9eeDqN"
-    },
-    {
-      "name": "huyen ne",
-      "phone": "123",
-      "id": "2upw4Mjyi"
+      "id": "HNABcL1D5",
+      "email": "hehe1@gmail.com",
+      "password": "e10adc3949ba59abbe56e057f20f883e"
     }
   ]
 }

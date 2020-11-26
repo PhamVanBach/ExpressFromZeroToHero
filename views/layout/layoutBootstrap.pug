@@ -13,6 +13,8 @@ html
                     span(span class="sr-only") (current)
             li(class="nav-item")
                 a(class="nav-link", href="/users/create") Create User
+    if user    
+        p= user.name
     block formOfNav
  body
     block content
