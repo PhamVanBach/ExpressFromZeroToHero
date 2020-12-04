@@ -1,0 +1,27 @@
+extends ../layout/layoutBootstrap
+block content
+    h1 Products
+    .d-flex.text-align-center   
+        form.form-inline.ml-auto
+            input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
+            button.btn.btn-outline-success.my-2.my-sm-0(type='GET') Search
+
+    
+    .row
+        each product in products
+            .col-sm-6.col-md-4.col-lg-3
+                .card.mb-3
+                    img.card-img-top(src=product.Image)
+                    .card-body
+                        h5.card-title= product.name
+                        p.card-text= product.description
+                        a.btn.btn-primary(href='#') Add to card
+    ul.pagination
+        li.page-item        
+            a.page-link(href='#') Previous
+        li.page-item
+            a.page-link(href='/products?page=1') 1
+        li.page-item
+            a.page-link(href='/products?page=2') 2
+        li.page-item
+            a.page-link(href='#') Next

@@ -12,9 +12,11 @@ html
                 a(class="nav-link" href="/users") Users
                     span(span class="sr-only") (current)
             li(class="nav-item")
-                a(class="nav-link", href="/users/create") Create User
+                a(class="nav-link" href="/users/create") Create User
+            li(class="nav-item")
+                a(class="nav-link" href="/products") Products
+    block formOfNav
     if user    
         p= user.name
-    block formOfNav
  body
     block content
