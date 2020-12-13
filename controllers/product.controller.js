@@ -7,13 +7,14 @@ module.exports.index = function(req,res){
     //way1
     // var start = (page - 1) * perPage;
     // var end = page*perPage;
-
+    
     //way2
     var drop = (page - 1) * perPage;
     res.render('products/index', {
         //way1
         // products: db.get('products').splice(start,end).value()
         //way2
-        products: db.get('products').drop(drop).take(perPage).value()
+        products: db.get('products').drop(drop).take(perPage).value(),
+        currentPage : page
     })
 };

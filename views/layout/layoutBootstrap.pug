@@ -15,8 +15,10 @@ html
                 a(class="nav-link" href="/users/create") Create User
             li(class="nav-item")
                 a(class="nav-link" href="/products") Products
-    block formOfNav
+            li(class="nav-item")
+                a(class="nav-link" href="/cart") Cart
     if user    
         p= user.name
+ block formOfNav
  body
     block content

@@ -1,23 +1,36 @@
 {
   "users": [
     {
-      "name": "Bach ne",
-      "phone": "12344545",
-      "id": "HNABcL1D5",
-      "email": "hehe1@gmail.com",
-      "password": "e10adc3949ba59abbe56e057f20f883e"
-    },
-    {
-      "name": "Huyen Ne",
-      "phone": "93431",
-      "id": "L0HrYbhq2",
+      "name": "Bach Pham",
+      "phone": "124344",
+      "id": "z-AwR-t8i",
       "email": "hehe2@gmail.com",
-      "password": "25d55ad283aa400af464c76d713c07ad"
+      "password": "25d55ad283aa400af464c76d713c07ad",
+      "avatar": "uploads/0e5894e583482611fd52179954835a9b"
     },
     {
-      "name": "hehe",
-      "phone": "1234",
-      "id": "7SJsaCEvg"
+      "name": "huyen ne",
+      "phone": "67767",
+      "id": "bqSyDQFZ5",
+      "avatar": "uploads/4e7fd19d7f226f7ac083aa780a245df6"
+    },
+    {
+      "name": "mit ne",
+      "phone": "566",
+      "id": "b5ttS_YgG",
+      "avatar": "uploads/4f0476b88940acdf807eb8dbea7fa898"
+    },
+    {
+      "name": "Hoang ",
+      "phone": "132",
+      "id": "WD7NND72T",
+      "avatar": "uploads/5d169b3913b69a0fa3aafca41b3e6230"
+    },
+    {
+      "name": "Bach Pham",
+      "phone": "6765",
+      "id": "Q0yUxjTUa",
+      "avatar": "uploads/0980265b1d053f5201e07b241043fa1d"
     }
   ],
   "products": [
@@ -620,6 +633,15 @@
       "name": "Temperature Recording Station",
       "Image": "https://picsum.photos/200/300",
       "description": "in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "-uwQ_mG7n",
+      "cart": {
+        "7341526b-82b1-440b-b625-96fbc6172b0c": 2,
+        "c519da35-0ad3-4e4f-be64-8ee8521f7cd7": 1
+      }
     }
   ]
 }

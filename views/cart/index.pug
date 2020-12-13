@@ -1,6 +1,6 @@
 extends ../layout/layoutBootstrap
 block content
-    h1 Products
+    h1 Cart
     .d-flex.text-align-center   
         form.form-inline.ml-auto
             input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
@@ -15,13 +15,4 @@ block content
                     .card-body.d-flex.flex-column
                         h5.card-title= product.name
                         p.card-text= product.description
-                        a.btn.btn-primary.mt-auto(href='/cart/add/' + product.id) Add to card
-    ul.pagination
-        li.page-item        
-            a.page-link(href='#') Previous
-        li.page-item
-            a.page-link(href='/products?page=1') 1
-        li.page-item
-            a.page-link(href='/products?page=2') 2
-        li.page-item
-            a.page-link(href='#') Next
+                        //- a.btn.btn-primary.mt-auto(href='/cart/add/' + product.id) Add to card
